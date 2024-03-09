@@ -35,6 +35,22 @@ Helping Hands is a web application that bridges the gap between donors and NGOs 
 
 ## Installation
 
-1. Clone this repository to your local machine using:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/HelpingHands.git
+   cd HelpingHands
 
-"# Helping-Hands" 
+2. **Install dependencies:**
+    ```bash
+    npm install
+
+3. **Run the development server:**
+   ```bash
+   npm start
+
+## Usage
+Open your web browser and navigate to http://localhost:3000.
+Explore the platform to discover NGOs and make donations effortlessly.
+
+## Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or create a pull request.
