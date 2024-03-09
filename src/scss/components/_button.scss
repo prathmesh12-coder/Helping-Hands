@@ -1,0 +1,88 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+button {
+  cursor: pointer;
+}
+
+.action-btn {
+  background-color: $secondaryColor;
+  color: $primaryTextColor;
+  &:hover {
+    color: $primaryTextColor;
+  }
+}
+
+.donate-now {
+  background-color: $secondaryColor;
+  color: $primaryTextColor;
+  border: 0;
+  span {
+    .icon-container {
+      @include setRoundedIcon($primaryTextColor, 30px, 30px);
+    }
+    .text-container {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 13px;
+      letter-spacing: 0.2ch;
+      margin-right: 20px;
+    }
+  }
+}
+
+.arrow-button {
+  @include setRoundedIcon($black, 50px, 50px);
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  i {
+    font-size: 15px;
+  }
+}
+.custom-prev {
+  left: 50px;
+  margin-top: 80px;
+}
+.custom-next {
+  right: 50px;
+  margin-top: 80px;
+}
+
+.icon-container {
+  @include setRoundedIcon($primaryTextColor, 40px, 40px);
+}
+
+// .custom-popover {
+//   // --bs-popover-max-width: 200px;
+//   // --bs-popover-border-color: $secondaryColor;
+//   // --bs-popover-header-bg: $secondaryColor;
+//   // --bs-popover-header-color: $primaryTextColor;
+//   // --bs-popover-body-padding-x: 1rem;
+//   // --bs-popover-body-padding-y: 0.5rem;
+//   $popover-header-bg: $secondaryColor;
+//   color: $secondaryColor;
+// }
+
+.popover {
+  border-color: $secondaryColor;
+}
+
+.bs-popover-auto[data-popper-placement^="right"] > .popover-arrow::before {
+  border-right-color: $secondaryColor;
+}
+
+.popover-header {
+  // font-size: 14px;
+  // font-weight: bold;
+  // line-height: 18px;
+  color: $primaryTextColor;
+  background-color: $secondaryColor;
+}
+.popover-body {
+  color: $secondaryColor;
+  font-weight: bold;
+}

@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+@import "../abstracts/variables";
+
+#support {
+  position: relative;
+  .support-background {
+    background: url("../../../public/assets/images/support.jpg");
+    background-color: rgba(0, 0, 0, 1);
+    background-attachment: fixed;
+    object-fit: cover;
+    background-position: center;
+    background-blend-mode: luminosity;
+    min-height: 60vh;
+    .content-container {
+      z-index: 1;
+      max-width: clamp(23.75rem, -6.3971rem + 120.5882vw, 75rem);
+      h3 {
+        font-size: clamp(1.875rem, 0.4044rem + 5.8824vw, 4.375rem);
+        color: $primaryTextColor;
+        span {
+          font-family: $secondaryFont;
+          color: $secondaryColor;
+        }
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+#sponsor {
+  background-color: #f2f0ec;
+  .custom-border {
+    border-bottom: 1px solid #d1ceca;
+    .custom-height {
+      height: 30vh;
+      img {
+        opacity: 0.5;
+        object-fit: contain;
+        width: 120px;
+        height: 120px;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+#articles {
+  position: relative;
+  &::after {
+    content: "";
+    background-color: #ffffff;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

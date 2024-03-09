@@ -1,0 +1,9 @@
+@import "../abstracts/variables";
+
+.custom-breadcrumb-item,
+.custom-breadcrumb-item > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $primaryTextColor;
+  font-size: clamp(0.5rem, 0.6544rem + 0.8824vw, 1rem);
+}

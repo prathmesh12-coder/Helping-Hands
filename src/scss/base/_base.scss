@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+@import "../abstracts/variables";
+/**
+ * Set up a decent box model on the root element
+ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $primaryFont;
+}
+
+/* Set up Fredoka One Font to all headers*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondaryFont !important;
+}
+
+/* image default width and object-fit */
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+/* Set up Secondary Colors To All Icons*/
+i {
+  color: $secondaryColor;
+}
+
+a {
+  color: $black;
+}
+
+.mid-grey {
+  color: $mid-grey;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: $primaryTextColor;
+}
+
+.progress-bar-color {
+  background-color: $secondaryColor;
+}

@@ -1,0 +1,65 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.card-container {
+  border: 1px solid $cardBorderColor;
+  border-radius: 10px;
+  .content-container {
+    h4 {
+      font-size: clamp(0.875rem, 0.5074rem + 1.4706vw, 1.5rem);
+    }
+    p {
+      color: #727272;
+    }
+  }
+  .progress-container {
+    background-color: #f2f0ec;
+    .statistics-container {
+      .currency {
+        font-size: 18px;
+        color: #000;
+      }
+      p {
+        font-size: 14px;
+        color: #727272;
+      }
+    }
+  }
+  .read-more {
+    p {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.info-card-container {
+  background: $infoCardBackground;
+  border-radius: 10px;
+  img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.img-container {
+  img {
+    @include setRoundedBorder(10px, 10px, 0, 0);
+    &.all-round-borders {
+      @include setRoundedBorder(10px, 10px, 10px, 10px);
+    }
+  }
+  .category-date-container {
+    @include categoryDateContainer;
+    &.top-left {
+      @include setPosition(top, left, 25px, 20px);
+    }
+    &.bottom-left {
+      @include setPosition(bottom, left, 25px, 20px);
+    }
+    &.rounded-border {
+      @include setRoundedBorder(10px, 0, 10px, 0);
+    }
+  }
+}

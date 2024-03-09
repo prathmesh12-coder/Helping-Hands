@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+header {
+  .single-carousel,
+  .header-detail {
+    position: relative;
+    .slider-container,
+    .header-detail-container {
+      background: $black;
+      img {
+        &.full-height {
+          @include setHeaderImage(100vh);
+        }
+        &.jumbotron {
+          @include setHeaderImage(370px);
+        }
+      }
+      .content-action,
+      .header-detail-content {
+        max-width: clamp(23.75rem, 8.3088rem + 61.7647vw, 50rem);
+        position: absolute;
+        left: 35%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        color: $primaryTextColor;
+        .custom-header-lg {
+          font-size: clamp(1.875rem, -0.6985rem + 10.2941vw, 5.25rem);
+        }
+        .custom-para {
+          color: white;
+          font-weight: 200;
+          font-size: clamp(0.875rem, 0.6544rem + 0.8824vw, 1.5rem);
+        }
+      }
+    }
+  }
+}

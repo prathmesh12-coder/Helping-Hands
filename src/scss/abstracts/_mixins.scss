@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@import "../abstracts/variables";
+
+@mixin categoryDateContainer {
+  background-color: $secondaryColor;
+  p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+@mixin setPosition($Xaxis, $Yaxis, $XaxisValue, $YaxisValue) {
+  #{$Xaxis}: $XaxisValue;
+  #{$Yaxis}: $YaxisValue;
+}
+
+@mixin setRoundedBorder($top, $right, $bottom, $left) {
+  border-radius: $top $right $bottom $left;
+}
+
+@mixin setHeaderImage($height) {
+  height: $height;
+  mix-blend-mode: luminosity;
+}
+
+@mixin setRoundedIcon($backgroundColor, $width, $height) {
+  background-color: $backgroundColor;
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+}

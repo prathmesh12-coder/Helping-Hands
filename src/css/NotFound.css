@@ -1,0 +1,5 @@
+.not-found {
+    width: 100%;
+    height: 100vh;
+    background: url("../../public/assets/images/404.jpeg") no-repeat center center/contain;
+}

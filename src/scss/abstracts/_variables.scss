@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$primaryFont: "DM sans", "Open Sans", "Helvetica Neue", sans-serif;
+
+/// Font family for Headers
+/// @type List
+$secondaryFont: "Fredoka One", sans-serif;
+
+/// Copy text color
+/// @type Color
+$primaryTextColor: rgb(246, 244, 250) !default;
+
+/// Secondary Color
+/// @type Color
+$secondaryColor: rgb(255, 128, 0) !default;
+
+/// Copy text color
+/// @type Color
+$mainHeaderColor: $secondaryColor !default;
+
+/// Copy text color
+/// @type Color
+$mainHeaderSecondaryColor: rgb(194, 194, 194) !default;
+
+/// Copy navbar color
+/// @type Color
+$navbarColor: $secondaryColor !default;
+
+/// Copy navbar background
+/// @type Color
+$Background: rgb(255, 255, 255) !default;
+
+/// Copy Card Border
+/// @type Color
+$cardBorderColor: rgb(255, 128, 0) !default;
+
+/// Copy Info Card Background
+/// @type Color
+$infoCardBackground: rgb(242, 240, 236) !default;
+
+/// Footer background
+/// @type Color
+$footerBackground: rgb(52, 52, 52) !default;
+
+/// Black
+/// @type Color
+$black: rgb(0, 0, 0) !default;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(114, 114, 114) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;

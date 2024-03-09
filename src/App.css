@@ -1,0 +1,225 @@
+.backgroundforbackground{
+    background-image: url("https://th.bing.com/th/id/OIP.W8apTKARTqVhmLzMCisNmAHaEs?pid=ImgDet&rs=1") !important;
+    background-color: red !important;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.modify{
+    min-width: 94px !important;
+    max-width: 94px !important;
+}
+
+.MuiTooltip-tooltip{
+    margin-top: -1rem;
+    background-color:transparent !important;
+}
+#footer{    margin-top: -0.5rem !important;
+    margin-bottom: -2.5rem !important;
+
+}
+/* .nav-link-active{
+    background-color: #ff8000;
+    color: white;
+} */
+
+.UserAvatarContent {
+  width: 220px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* .UserAvatarHeading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+} */
+
+/* 
+.image {
+  flex-grow: 1;
+} */
+
+.fab{
+  cursor: pointer;
+}
+.createButton {
+  margin-top: 2rem;
+  background-color: #007bff;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.createButton:hover {
+  background-color: #0056b3;
+}
+
+
+.UserAvatarContent::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.UserAvatarContent::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+}
+
+.LogOutButton {
+  margin-top: 2rem;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #606060;
+}
+
+.LogOutButton:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative; /* add position relative */
+}
+
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   /* changed from margin-bottom to margin-top */
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px; /* changed from margin-bottom to margin-top */
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+.back-button {
+  margin-top: 20px;
+  margin-left: 10rem;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #709085;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #506269;
+}
+
+.back-button:focus {
+  outline: none;
+}
+
+.container2{
+  margin-top: 1.7rem;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+  /* background-color: #007bff; */
+
+}
+.form-column{
+  flex: 1;
+  padding: 20px;
+}
+.image-column{
+  flex: 1;
+  padding: 20px;
+}
+
+.FormGroup2 {
+	margin: 0 15px 20px;
+	padding: 0;
+  color: #000000;
+	border-style: none;
+	background-color: #7795f8;
+	will-change: opacity, transform;
+	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+	border-radius: 4px;
+}
+
+.FormRow2 {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-left: 15px;
+	border-top: 10px solid #000000;
+  color: #000000;
+}
+
+.StripeElement--webkit-autofill {
+	background: transparent !important;
+}
+
+.StripeElement {
+	width: 100%;
+	padding: 11px 15px 11px 0;
+}
+
+button2 {
+	display: block;
+	font-size: 16px;
+	width: calc(100% - 30px);
+	height: 40px;
+	margin: 40px 15px 0;
+	background-color: #f6a4eb;
+	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #ffb9f6;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 100ms ease-in-out;
+	will-change: transform, background-color, box-shadow;
+	border: none;
+}
+
+button2:active {
+	background-color: #d782d9;
+	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #e298d8;
+	transform: scale(0.99);
+}
+

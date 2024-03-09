@@ -1,0 +1,24 @@
+@import "../abstracts/variables";
+
+.event-info-list {
+  margin-bottom: 1.5rem;
+  p {
+    text-transform: uppercase;
+  }
+  span {
+    color: $secondaryColor;
+    font-weight: bold;
+  }
+}
+
+.latest-blog-list {
+  margin-bottom: 1.5rem;
+  p {
+    font-family: $secondaryFont !important;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  img {
+    object-fit: fill;
+  }
+}
